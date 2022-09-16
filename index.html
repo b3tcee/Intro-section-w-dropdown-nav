@@ -5,35 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="index.css" >
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+  <div class="body-wrapper">
+  <!--NAV SECTION BEGINS-->
+    <nav class="header__container">
+      <img class="header__logo"src="images/logo.svg">
+      <ul class="info__section">
+        <li> Features <img src="images/icon-arrow-down.svg"></li> 
+        <li> Company <img src="images/icon-arrow-down.svg"></li> 
+        <li>Careers</li> 
+        <li> About</li>
+      </ul>
+      <ul class="user__section">
+        <li>Login</li> 
+        <li><button class="reg__button">Register</button> </li> 
+      </ul>
+    </nav>
+      <!--NAV SECTION ENDS-->
 
-  Features
-  Company
-  Careers
-  About
+      <!--PREVIEW SECTION BEGINS-->
+    <section>
+      <div>
+        Make remote work
 
-  Login
-  Register
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        Learn more
+      </div>
+      <img src="images/image-hero-desktop.png">
+    </section>
+      <!--PREVIEW SECTION ENDS-->
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Betsy Otoyo</a>.
+      </div>
   </div>
 </body>
 </html>
