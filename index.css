@@ -20,6 +20,7 @@
     font-family:var(--font-family);
     margin: 0px auto;
     padding: 0;
+    background-color: var(--Almost-white);
 }
 .body-wrapper{
     margin: 0 3%;
@@ -84,6 +85,11 @@ nav ul li:hover{
     cursor: pointer;
 }
 
+.mobile__menu{
+    width: 8%;
+    height: 2%; 
+    display: none; 
+}
 /* =============PREVIEW SECTION ================ */
 
 .preview__container{
@@ -95,7 +101,7 @@ nav ul li:hover{
 
 
 .desktop__image{
-    width: 37%;
+    width: 40%;
     
 }
 
@@ -107,7 +113,10 @@ nav ul li:hover{
 .preview__heading{
     font-size: 70px;
     font-weight: var(--bold-weight);
-    margin-top: 58px;
+    margin-top: 73px;
+    width: 79%;
+    margin-left: 0px;
+    
 }
 
 .preview__details{
@@ -116,6 +125,7 @@ nav ul li:hover{
     /* font-size: var(--p-font); */
     margin: 35px 0px;
     font-weight: var(--light-weight);
+    width: 66%;
 }
 
 .more__button{
@@ -143,4 +153,65 @@ nav ul li:hover{
 
 .client__display img{
     width: 65%;
+}
+
+.mobile__image{
+    display: none
+}
+
+/* =============DROPDOWN SECTION ================ */
+
+.features__dropdown ul li, .company__dropdown ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: var(--Medium-gray);
+    font-size: 13px;
+    background-color: #ffff;
+}
+
+.features__dropdown ul , .company__dropdown ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+.features__dropdown{
+    height: 100px;
+    width: 86px;
+    margin: 0px;
+    background-color: #ffff;
+    padding: 17px;
+    border-radius: 8px;
+    box-shadow:11px 13px 70px rgb(0 0 0 / 15%);
+    display: none;
+    position: absolute;
+    top: 8%;
+    margin-left: 96px;
+}
+
+.company__dropdown{
+    background-color: #ffff;
+    height: 70px;
+    width: 60px;
+    /* align-content: center; */
+    margin: 0px;
+    padding: 17px;
+    border-radius: 8px;
+    box-shadow:11px 13px 70px rgb(0 0 0 / 15%);
+    display: none;
+    position: absolute;
+    top: 8%;
+    margin-left: 15em;
+}
+
+.company__dropdown ul li {
+    margin-left: 0;
+}
+
+.features--icon{
+    margin-right: 10px;
+    width: 13%;
+    background-color: #ffff;
 }

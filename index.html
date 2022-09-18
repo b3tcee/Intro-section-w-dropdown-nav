@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css" >
+  <link rel="stylesheet" href="responsive.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,8 +18,8 @@
     <nav class="header__container">
       <img class="header__logo"src="images/logo.svg">
       <ul class="info__section">
-        <li> Features <img src="images/icon-arrow-down.svg"></li> 
-        <li> Company <img src="images/icon-arrow-down.svg"></li> 
+        <li> Features <img src="images/icon-arrow-down.svg" class="features__dropdown--icon"></li> 
+        <li> Company <img src="images/icon-arrow-down.svg" class="company__dropdown--icon"></li> 
         <li>Careers</li> 
         <li> About</li>
       </ul>
@@ -26,16 +27,17 @@
         <li>Login</li> 
         <li><button class="reg__button">Register</button> </li> 
       </ul>
+      <img class="mobile__menu"src="images/icon-menu.svg">
     </nav>
       <!--NAV SECTION ENDS-->
 
       <!--PREVIEW SECTION BEGINS-->
     <section class="preview__container">
       <div class="preview__text">
-       <p class="preview__heading"> Make <br> remote work</p>
+       <p class="preview__heading"> Make remote work</p>
 
-       <p class="preview__details">Get your team in sync, no matter your location.<br> Streamline processes, 
-        create team rituals, and <br> watch productivity soar.</p> 
+       <p class="preview__details">Get your team in sync, no matter your location.Streamline processes, 
+        create team rituals, and watch productivity soar.</p> 
 
         <button class="more__button">Learn more</button>
 
@@ -46,9 +48,27 @@
           <img src="images/client-maker.svg">
         </div>
       </div>
+      <img class="mobile__image" src="images/image-hero-mobile.png">
       <img class="desktop__image" src="images/image-hero-desktop.png">
     </section>
       <!--PREVIEW SECTION ENDS-->
+
+      <!--DROPDOWN SECTIONS BEGINS-->
+    <section class="features__dropdown">
+        <ul>
+          <li><span><img src="images/icon-todo.svg" class="features--icon"></span>ToDo List</li>
+          <li><span><img src="images/icon-calendar.svg" class="features--icon"></span></span>Calender</li>
+          <li><span><img src="images/icon-reminders.svg"class="features--icon"></span></span>Reminder</li>
+          <li><span><img src="images/icon-planning.svg" class="features--icon"></span></span>Planning</li>
+        </ul>
+      </section>
+      <section class="company__dropdown">
+        <ul>
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+     </section>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Betsy Otoyo</a>.
