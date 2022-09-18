@@ -39,6 +39,10 @@ bottom: 17px;
 position: relative;
 }
 
+/* nav ul:active{
+    color: var(--Almost-black);
+} */
+
 nav ul li{
     list-style: none;
     margin: 20px;
